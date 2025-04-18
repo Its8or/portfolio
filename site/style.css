@@ -1,0 +1,78 @@
+:root {
+    --font : "Atkinson Hyperlegible Mono";
+    --buttom: #ff3;
+    --size: 10px;
+}
+
+body {
+    font-family: var(--font);
+    margin: calc(var(--size)*0);
+    padding: calc(var(--size)*0);
+}
+
+h3,H4 {
+    border-bottom: solid 1px black;
+}
+
+.homeBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+    padding: calc(var(--size) * 5);
+}
+
+/* DARK/LIGHT mode button */
+#schemeMode{
+    height: fit-content;
+}
+
+.homeMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: inherit;
+    justify-items: inherit;
+    align-items: inherit;
+    list-style: none;
+    gap: calc(var(--size) * 2);
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    padding: calc(var(--size) * 5);
+    justify-content: space-between;
+
+    & .collumn{
+        align-content: center;
+        justify-items: center;
+    }
+    & #callToAction{
+        border-radius: calc(var(--size) * 2);
+        padding: 10px;
+        border: 0px;
+        background-color: var(--buttom);
+    }
+}
+
+.aboutMe, .project, .contact{
+    margin: calc(var(--size) * 5);
+    padding: 0 calc(var(--size) * 2) var(--size);
+    border: 1px solid;
+    border-radius: calc(var(--size) * 2.5);
+}
+
+.projectItem{
+    margin: 0 calc(var(--size) * 5);
+}
+
+.contactItems{
+    display: flex;
+    gap: var(--size);
+    justify-content: center;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}

@@ -4,54 +4,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
 </head>
 
 <body>
     <header class="homeBar">
-        <h1>Hello, there!</h1>
-        <div class="homeMenu">
-            <ul>
-                <a href="#aboutMe">
-                    <li>About me</li>
-                </a>
-                <a href="#projects">
-                    <li>Projects</li>
-                </a>
-                <a href="#contact">
-                    <li>Contact</li>
-                </a>
-            </ul>
-        </div>
+        <button type="button" id="schemeMode">Dark/Light Mode</button>
+        <ul class="homeMenu">
+            <a href="#aboutMe">
+                <li>About me</li>
+            </a>
+            <a href="#projects">
+                <li>Projects</li>
+            </a>
+            <a href="#contact">
+                <li>Contact</li>
+            </a>
+        </ul>
     </header>
 
     <main>
-        <input type="button" value="Check out my projects" id="callToAction">
+        <div class="collumn">
+            <h1>Hello, there!</h1>
+            <a href="https://github.com/Its8or"><input type="button" value="Check out my projects"
+                    id="callToAction"></a>
+        </div>
         <img src="./images/meImg.jpg" alt="selfImage" id="meImg" height="200px">
+
+        <section class="aboutMe">
+            <h3>About me:</h3>
+            <p>
+                Currently graduating in Computer Science.
+            </p>
+        </section>
+
+        <section class="project">
+            <h3>Projects:</h3>
+
+            <section id="project1">
+                <h4>Porject #1</h4>
+                <p></p>
+            </section>
+
+            <section id="project2">
+                <h4>Porject #2</h4>
+                <p></p>
+            </section>
+
+            <section id="project3">
+                <h4>Porject #3</h4>
+                <p></p>
+            </section>
+        </section>
+
+        <section class="contact">
+            <h3>Contact me:</h3>
+            <div class="itens">
+                <a href="https://linkedin.com/in/heitor-terto/" target="_blank" rel="noopener noreferrer"><img
+                        src="./images/linkedin.svg" alt="linkedin"></a>
+                <a href="https://github.com/Its8or" target="_blank" rel="noopener noreferrer"><img
+                        src="./images/github.svg" alt="github"></a>
+                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./images/discord.svg"
+                        alt="discord"></a>
+                <a href="mailto:contatoheitorterto@gmail.com"><img src="./images/envelope-paper-fill.svg"
+                        alt="mailMe"></a>
+            </div>
+        </section>
     </main>
 
-    <section class="aboutMe">
-        <h3>About me:</h3>
-        <p>
-            Currently graduating in Computer Science.
-        </p>
-    </section>
-
-    <section class="project">
-        <h3>Some Projects:</h3>
-        (section#project$>h4{Porject $}+p)*3
-    </section>
-
-    <section class="contact">
-        <h3>Contact me:</h3>
-        <div class="itens">
-            <img src="./images/linkedin.svg" alt="linkedin">
-            <img src="./images/github.svg" alt="github">
-            <img src="./images/discord.svg" alt="discord">
-            <img src="./images/envelope-paper-fill.svg" alt="mailMe">
-        </div>
-    </section>
+    <footer> &copy; 2025 Heitor Dev </footer>
 
     <!-- End of HTML - JavaScript Section -->
     <script src="script.js"></script>

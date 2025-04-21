@@ -2,8 +2,8 @@
     --font: "Atkinson Hyperlegible Mono";
     --size: 10px;
     --siteBackground: #121420;
-    --tabs: #1b2432;
-    --sectionBackground: #2C2B3C;
+    --tabs: #2C2B3C;
+    --sectionBackground: #1b2432;
     --callToActionButtom: #ff3;
     --details: white;
     --text: white;
@@ -90,11 +90,12 @@ main {
 .knownLang,
 .contact {
     align-self: center;
+    background-color: var(--sectionBackground);
     width: calc(var(--size) * 50);
     margin: calc(var(--size) * 2) calc(var(--size) * 5);
     padding: 0 calc(var(--size) * 2) var(--size);
-    border: calc(var(--size) * 0.1) solid;
     border-radius: calc(var(--size) * 2.5);
+    box-shadow: 0 0 20px  var(--sectionBackground);
 }
 
 .aboutMe > p {

@@ -1,12 +1,12 @@
 :root {
     --font: "Atkinson Hyperlegible Mono";
-    --size: 10px;
+    --fontSize: 10px;
     --siteBackground: #121420;
     --tabs: #2C2B3C;
     --sectionBackground: #1b2432;
     --callToActionButtom: #ff3;
-    --details: white;
-    --text: white;
+    --details: #ffffff;
+    --text: #ffffff;
 }
 
 html {
@@ -18,8 +18,8 @@ body {
     display: flex;
     flex-direction: column;
     font-family: var(--font);
-    margin: calc(var(--size)*0);
-    padding: calc(var(--size)*0);
+    margin: calc(var(--fontSize)*0);
+    padding: calc(var(--fontSize)*0);
     background-color: var(--siteBackground);
 }
 
@@ -30,7 +30,7 @@ a {
 
 h3,
 H4 {
-    border-bottom: solid calc(var(--size) * 0.1) var(--details);
+    border-bottom: solid calc(var(--fontSize) * 0.1) var(--details);
 }
 
 .homeBar {
@@ -38,7 +38,7 @@ H4 {
     align-items: center;
     justify-content: space-between;
     background-color: var(--tabs);
-    padding: calc(var(--size) * 0.2) calc(var(--size) * 5);
+    padding: calc(var(--fontSize) * 0.2) calc(var(--fontSize) * 5);
 }
 
 /* DARK||LIGHT mode button */
@@ -49,14 +49,19 @@ H4 {
 .homeMenu {
     display: inherit;
     list-style: none;
-    gap: calc(var(--size) * 2);
+    gap: calc(var(--fontSize) * 2);
+}
+
+.homeMenu>a:hover {
+    text-shadow: 0 0 10px var(--details);
+    text-decoration: none;
 }
 
 main {
     display: inherit;
     justify-content: center;
-    padding: calc(var(--size) * 5);
-    gap: calc(var(--size) * 5);
+    padding: calc(var(--fontSize) * 5);
+    gap: calc(var(--fontSize) * 5);
 
     /* Separation between img and Button & Header */
     & .collumn {
@@ -70,14 +75,14 @@ main {
     }
 
     & #callToAction {
-        border-radius: calc(var(--size) * 2);
-        padding: var(--size);
-        border: calc(var(--size) * 0);
+        border-radius: calc(var(--fontSize) * 2);
+        padding: var(--fontSize);
+        border: calc(var(--fontSize) * 0);
         background-color: var(--callToActionButtom);
     }
 
     & #callToAction:hover {
-        box-shadow: 0 0 2px var(--details);
+        box-shadow: 0 0 10px var(--callToActionButtom);
     }
 
     & img {
@@ -86,32 +91,40 @@ main {
 }
 
 .aboutMe,
-.project,
 .knownLang,
+.project,
 .contact {
     align-self: center;
     background-color: var(--sectionBackground);
-    width: calc(var(--size) * 50);
-    margin: calc(var(--size) * 2) calc(var(--size) * 5);
-    padding: 0 calc(var(--size) * 2) var(--size);
-    border-radius: calc(var(--size) * 2.5);
-    box-shadow: 0 0 20px  var(--sectionBackground);
+    width: calc(var(--fontSize) * 50);
+    margin: calc(var(--fontSize) * 2) calc(var(--fontSize) * 5);
+    padding: 0 calc(var(--fontSize) * 2) var(--fontSize);
+    border-radius: calc(var(--fontSize) * 2.5);
+    box-shadow: 0 0 20px var(--sectionBackground);
 }
 
-.aboutMe > p {
-    padding: 0 calc(var(--size) * 5);
+.aboutMe>p {
+    padding: 0 calc(var(--fontSize) * 5);
 }
 
 .projectItem,
 .knownLang {
-    margin: 0 calc(var(--size) * 5);
+    margin: 0 calc(var(--fontSize) * 5);
 }
 
-.knownLang > ul {
+.projectItem>a:hover {
+    text-decoration: underline;
+}
+
+.knownLang>ul {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     list-style: none;
     padding: 0px 50px;
+
+    &>li:hover {
+        text-shadow: 0 0 10px var(--details);
+    }
 }
 
 .contactItems {
@@ -123,8 +136,8 @@ main {
         display: inherit;
         flex-direction: row;
         align-items: center;
-        gap: calc(var(--size));
-        margin: calc(var(--size) * 0) calc(var(--size) * 5);
+        gap: calc(var(--fontSize));
+        margin: calc(var(--fontSize) * 0) calc(var(--fontSize) * 5);
 
         & svg {
             width: 30px;
@@ -136,6 +149,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: calc(var(--size) * 0.5) 0 calc(var(--size) * 1);
+    padding: calc(var(--fontSize) * 0.5) 0 calc(var(--fontSize) * 1);
     background-color: var(--tabs);
 }

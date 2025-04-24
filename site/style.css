@@ -112,8 +112,10 @@ main {
     margin: 0 calc(var(--fontSize) * 5);
 }
 
-.projectItem>a:hover {
-    text-decoration: underline;
+.projectItem {
+    & >a:hover {
+        text-decoration: underline;
+    }
 }
 
 .knownLang>ul {

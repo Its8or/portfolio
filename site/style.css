@@ -29,7 +29,7 @@ a {
 }
 
 h3,
-H4 {
+h4 {
     border-bottom: solid calc(var(--fontSize) * 0.1) var(--details);
 }
 
@@ -92,6 +92,7 @@ main {
 
 .aboutMe,
 .knownLang,
+.projects,
 .project,
 .contact {
     align-self: center;
@@ -101,6 +102,10 @@ main {
     padding: 0 calc(var(--fontSize) * 2) var(--fontSize);
     border-radius: calc(var(--fontSize) * 2.5);
     box-shadow: 0 0 20px var(--sectionBackground);
+}
+
+.project p{
+    margin: 5px 0px;
 }
 
 .aboutMe>p {
@@ -114,7 +119,7 @@ main {
 
 .projectItem {
     & >a:hover {
-        text-decoration: underline;
+        text-shadow: 0 0 10px var(--text);
     }
 }
 
@@ -154,3 +159,5 @@ footer {
     padding: calc(var(--fontSize) * 0.5) 0 calc(var(--fontSize) * 1);
     background-color: var(--tabs);
 }
+
+

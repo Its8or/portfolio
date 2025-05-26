@@ -19,7 +19,9 @@ body {
     flex-direction: column;
     font-family: var(--font);
     margin: calc(var(--fontSize)*0);
+    /*0*/
     padding: calc(var(--fontSize)*0);
+    /*0*/
     background-color: var(--siteBackground);
 }
 
@@ -41,18 +43,13 @@ h4 {
     padding: calc(var(--fontSize) * 0.2) calc(var(--fontSize) * 5);
 }
 
-/* DARK||LIGHT mode button */
-#schemeMode {
-    height: fit-content;
-}
-
 .homeMenu {
     display: inherit;
     list-style: none;
     gap: calc(var(--fontSize) * 2);
 }
 
-.homeMenu>a:hover {
+.homeMenua:hover {
     text-shadow: 0 0 10px var(--details);
     text-decoration: none;
 }
@@ -64,7 +61,7 @@ main {
     gap: calc(var(--fontSize) * 5);
 
     /* Separation between img and Button & Header */
-    & .collumn {
+    .collumn {
         align-content: center;
         justify-items: center;
 
@@ -72,20 +69,20 @@ main {
         & h1 {
             text-align: center;
         }
+
+        #callToAction {
+            border-radius: calc(var(--fontSize) * 2);
+            padding: var(--fontSize);
+            border: calc(var(--fontSize) * 0);
+            background-color: var(--callToActionButtom);
+        }
+
+        #callToAction:hover {
+            box-shadow: 0 0 10px var(--callToActionButtom);
+        }
     }
 
-    & #callToAction {
-        border-radius: calc(var(--fontSize) * 2);
-        padding: var(--fontSize);
-        border: calc(var(--fontSize) * 0);
-        background-color: var(--callToActionButtom);
-    }
-
-    & #callToAction:hover {
-        box-shadow: 0 0 10px var(--callToActionButtom);
-    }
-
-    & img {
+    img {
         border-radius: 50%;
     }
 }
@@ -104,7 +101,7 @@ main {
     box-shadow: 0 0 20px var(--sectionBackground);
 }
 
-.project p{
+.project p {
     margin: 5px 0px;
 }
 
@@ -118,7 +115,7 @@ main {
 }
 
 .projectItem {
-    & >a:hover {
+    & a:hover {
         text-shadow: 0 0 10px var(--text);
     }
 }
@@ -129,7 +126,7 @@ main {
     list-style: none;
     padding: 0px 50px;
 
-    &>li:hover {
+    & li:hover {
         text-shadow: 0 0 10px var(--details);
     }
 }
@@ -159,5 +156,3 @@ footer {
     padding: calc(var(--fontSize) * 0.5) 0 calc(var(--fontSize) * 1);
     background-color: var(--tabs);
 }
-
-

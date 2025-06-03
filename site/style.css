@@ -39,7 +39,7 @@ h4 {
 .homeBar {
     display: inherit;
     align-items: center;
-    justify-content: space-between;
+    justify-content: right;
     background-color: var(--tabs);
     padding: 10px min(13em, 2%);
     /*2px 50px */
@@ -115,11 +115,12 @@ main {
 .projectItem {
     margin: 0 0 0 calc(var(--fontSize) * 1.25);
     /*l b r t*/
-
-    
 }
 
 .projectItem {
+    a {
+        margin-top: 10px
+    }
     & a:hover {
         text-shadow: 0 0 10px var(--text);
     }
@@ -186,13 +187,6 @@ footer {
 
 
 @media (max-width: 425px) {
-
-    .homeMenu {
-        #menuAboutMe {
-            display: none;
-        }
-    }
-
     main {
         img {
             display: none;

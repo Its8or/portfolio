@@ -119,7 +119,7 @@ main {
 
 .projectItem {
     a {
-        margin-top: 10px
+        margin-left: 25px;
     }
     & a:hover {
         text-shadow: 0 0 10px var(--text);

@@ -81,6 +81,7 @@ main {
 
         #callToAction:hover {
             box-shadow: 0 0 0.8em var(--callToActionButtom);
+            cursor: pointer;
         }
     }
 
